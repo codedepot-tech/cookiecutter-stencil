@@ -35,6 +35,7 @@ git_commands = [
   'git init'.split(' '),
   'git add .'.split(' '),
   # 'git commit -m \"init\" '.split(' ')
+  'git commit -m "init"'.split(' ')
 ]
 
 
@@ -55,7 +56,7 @@ if __name__ == '__main__':
   for ddep in project_js_dev_deps:
     call(f'npm install --save-dev {ddep}'.split(' '))
 
-  call('npm install'.split(' '))
+  # call('npm install'.split(' '))
 
   # call('npm audit fix'.split(' '))
 
