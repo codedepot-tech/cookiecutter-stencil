@@ -56,9 +56,9 @@ if __name__ == '__main__':
   for ddep in project_js_dev_deps:
     call(f'npm install --save-dev {ddep}'.split(' '))
 
-  # call('npm install'.split(' '))
+  call('npm install'.split(' '))
 
-  # call('npm audit fix'.split(' '))
+  call('npm audit fix'.split(' '))
 
   # git commands
   for cmd in git_commands:
