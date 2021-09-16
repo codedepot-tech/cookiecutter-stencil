@@ -18,7 +18,9 @@
         packages.${system}.{{cookiecutter.project_name}} = pkgs.buildNpmPackage {
           src = ./.;
           npmBuild = "npm run build";
-          extraEnvVars = "PUPPETEER_SKIP_DOWNLOAD=1";
+          extraEnvVars = {
+            "PUPPETEER_SKIP_DOWNLOAD=1";
+          };
         };
 
         defaultPackage.${system} = self.packages.${system}.{{cookiecutter.project_name}};
