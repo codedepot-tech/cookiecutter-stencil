@@ -2,6 +2,5 @@
   "project_name": "stencil-project",
   "project_description": "A Code Depot Component",
   "project_version": "0.0.1",
-  "project_js_deps": "(space seperated) BUILTINS ARE.. graphql apollo-client",
-  "project_dev_deps": "(space seperated) BUILTINS ARE.. nodejs npm yarn stencil"
+  "project_dev_deps": "(space seperated) <stencil is builtin>"
 }
